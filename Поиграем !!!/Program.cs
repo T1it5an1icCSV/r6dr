@@ -71,12 +71,12 @@ class Program
     
     static void MultiplicationTable()
     {
-        int size = 10; // размер таблицы умножения
+        int size = 10; 
 
-        // Создаем матрицу для хранения значений таблицы умножения
+      
         int[,] multiplicationTable = new int[size, size];
 
-        // Заполняем матрицу значениями таблицы умножения
+        
         for (int i = 0; i < size; i++)
         {
             for (int j = 0; j < size; j++)
@@ -85,12 +85,12 @@ class Program
             }
         }
 
-        // Выводим матрицу в виде таблицы
+        
         for (int i = 0; i < size; i++)
         {
             for (int j = 0; j < size; j++)
             {
-                Console.Write("{0,4}", multiplicationTable[i, j]); // ширина ячейки - 4 символа
+                Console.Write("{0,4}", multiplicationTable[i, j]); 
             }
             Console.WriteLine();
             
@@ -111,7 +111,7 @@ class Program
             return;
         }
 
-        Console.WriteLine($"Делители числа {number}:");
+        Console.WriteLine("Делители числа {number}:");
 
         for (int i = 1; i <= number; i++)
         {
